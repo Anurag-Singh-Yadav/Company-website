@@ -115,7 +115,7 @@
 
         .example-cards{
             width: calc(100% - 20px);
-            height: 120px;
+            height: 110px;
         }
 
 }
