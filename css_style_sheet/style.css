@@ -17,7 +17,6 @@
 body {
     font-family: 'poppins', sans-serif;
     color: var(--primaray-text-color);
-
 }
 
 h1 {
@@ -62,9 +61,13 @@ a {
     max-width: 1180px;
     margin-inline: auto;
     padding-inline: var(--padding-inline-section);
+    overflow: hidden;
 }
 .nav-links{
     flex-basis: 730px;
+}
+.nav-toggle{
+    display: none;
 }
 .primery-button{
     background-color: var(--accent-color);
@@ -73,6 +76,7 @@ a {
     font-weight: 700;
     padding: 12px 24px;
     transition: 0.2s ease-out;
+    text-align: center;
 }
 .primery-button:hover{
     background-color: var(--accent-color-dark);
@@ -102,6 +106,7 @@ a {
 .main-menu {
     margin-top: 20px;
     justify-content: space-between;
+    position: relative;
 }
 
 .company-logo img {
@@ -135,7 +140,7 @@ a {
     margin: 20px 0 20px 0;
 }
 .header-section img{
-    width: 600px;
+    width: 100%;
 }
 .get-started-btn{
     margin: 30px 0 0 0 ;
@@ -148,6 +153,7 @@ a {
 .logos{
     justify-content: space-around;
     flex-wrap: wrap;
+    gap: 20px;
 }
 .logo{
     height: 46px;
@@ -155,7 +161,7 @@ a {
 
 .features-section{
     padding: 80px var(--padding-inline-section) 0;
-    background-image: url(/assets/asset\ 34.svg);
+    background-image: url(assets/asset\ 34.svg);
     background-repeat: no-repeat;
     background-position: center;
 }
@@ -205,7 +211,7 @@ a {
 .example-cards{
     width: 23%;
     position: relative;
-    min-height: 300px;
+    height: 300px;
     background: black;
     background: linear-gradient(rgb(0,0,0,0.1),rgb(0,0,0,0.8),url(/assets/asset\ 38.jpeg));
 }
@@ -220,6 +226,7 @@ a {
 
 .example-area{
     margin-block: 30px;
+    flex-wrap: wrap;
     justify-content: space-around;
 }
 .example-cards:hover{
@@ -251,7 +258,6 @@ a {
     justify-content: center;
     width: 100%;
     align-items: flex-start;
-    
     justify-content: space-evenly;
 
 }

@@ -6,6 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css_style_sheet/style.css">
+    <link rel="stylesheet" href="css_style_sheet/media_queries.css">
+    <link rel="shortcut icon" href="css_style_sheet/favicon.ico" type="image/x-icon">
     <title>My website</title>
 </head>
 
@@ -28,7 +30,7 @@
                 <img src="assets/asset 1.png" alt="" srcset="">
             </a>
 
-            <div class="nav-links">
+            <div class="nav-links" id="nav-link">
                 <ul class="flex nav-tool">
                     <li><a href="#" class="hover-link">Products</a></li>
                     <li><a href="#" class="hover-link">Customers</a></li>
@@ -38,6 +40,10 @@
                     <li><a href="#" class="hover-link primery-button">Sign in</a></li>
                 </ul>
             </div>
+            
+            <a href="#" class="nav-toggle hover-link" id="nav-toggle">
+                <i class="fa-solid fa-bars"></i>
+            </a>
 
 
         </div>
@@ -156,7 +162,7 @@
 
 
     <section class="big-features-section">
-        <div class="container flex big-features-container">
+        <div class="container flex big-features-container hii">
 
             <div class="feature-desc flex">
                 <h3 class="margin-text">Designs Professional</h3>
@@ -299,6 +305,13 @@
     <!-- <div class="spacer" style="height:100vh"></div> -->
 
     <script src="https://kit.fontawesome.com/25b8cbd3ff.js" crossorigin="anonymous"></script>
+    <script>
+        const toggleButton = document.getElementById('nav-toggle');
+        const navlink = document.getElementById('nav-link');
+        toggleButton.addEventListener('click',()=>{
+            navlink.classList.toggle('active');
+        })
+    </script>
 
 </body>
 
