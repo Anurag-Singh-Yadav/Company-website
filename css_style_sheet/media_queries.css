@@ -16,6 +16,8 @@
         padding-block: 20px;
         transition: 0.2s ease-in-out;
     }
+
+    
     .nav-links.active{
         left: 0;
     }
@@ -39,7 +41,7 @@
 @media screen and (max-width:767px) {
 
     .primery-button{
-        width: 100vw;
+        width: 100%;
     }
 
     .header-section{
